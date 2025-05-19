@@ -1,29 +1,41 @@
+/* Make sure background image covers entire page */
 body {
-  background-image: url('background.jpg'); /* your image */
+  margin: 0;
+  padding: 0;
+  background-image: url('background.jpg'); /* make sure filename is correct */
   background-size: cover;
-  background-position: center;
   background-repeat: no-repeat;
-  color: white; /* default text color */
+  background-position: center;
+  color: white; /* text color to white for visibility */
   font-family: Arial, sans-serif;
+  min-height: 100vh;
 }
 
+/* Container for content */
 .container {
-  background-color: rgba(0, 0, 0, 0.6); /* semi-transparent dark bg for text */
-  padding: 20px;
+  background: rgba(0, 0, 0, 0.6); /* semi-transparent black */
   margin: 40px auto;
+  padding: 30px;
   border-radius: 10px;
   max-width: 900px;
-  color: white;
 }
 
-h2, h3 {
-  text-align: center; /* center all headings */
+/* Headings centered and with spacing */
+h1, h2, h3 {
+  text-align: center;
   margin-bottom: 15px;
-  color: white;
 }
 
+/* Paragraphs with better line spacing */
 p {
   font-size: 17px;
-  line-height: 1.5;
-  color: white;
+  line-height: 1.6;
+}
+
+/* Optional: Make image responsive */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 20px auto;
 }
